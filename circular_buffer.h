@@ -1,4 +1,4 @@
-//edited in stepperGUI 
+//edited in stepperGUI2
 
 #ifndef CIRCULARBUFFER_H
 #define CIRCULARBUFFER_H
