@@ -11,12 +11,25 @@ This directory contains shared header files used by both StepperGUI and StepperC
 
 To update the shared files to the latest version:
 
-### On Windows (PowerShell):
+### Easy Method (Windows):
+**Double-click "Update Submodule.lnk" shortcut in Windows File Explorer**
+- ⚠️ **Important**: Run the shortcut from Windows File Explorer, NOT from inside PlatformIO/VS Code
+- PlatformIO overrides .bat file associations, so the shortcut must be run from Windows Explorer
+- The shortcut will open a command window, run the update, and wait for you to press a key
+
+### Command Line Methods:
+
+#### On Windows (PowerShell):
 ```powershell
 .\update_submodule.ps1
 ```
 
-### On Linux/Mac (Bash):
+#### On Windows (Batch):
+```batch
+.\update_submodule.bat
+```
+
+#### On Linux/Mac (Bash):
 ```bash
 ./update_submodule.sh
 ```
