@@ -1,7 +1,7 @@
 #pragma once
 
 #define STEPPER_PARAM_UNUSED 0
-
+// editted in MagLoop_Common_Files/stepper_commands.h
 // Command types for stepper motor control
 typedef enum {
     CMD_STOP = 0,
