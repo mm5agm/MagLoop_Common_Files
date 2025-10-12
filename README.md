@@ -1,6 +1,5 @@
 <<<<<<< HEAD
 # MagLoop Common Files
-
 Shared header files for MagLoop stepper motor control projects.
 
 ## 📁 Contents
