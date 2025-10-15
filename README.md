@@ -28,8 +28,11 @@ Each project includes update scripts for easy maintenance:
 # Windows
 Use Explorer to go to the project folder
 In the project folder double click 
+
 update_submodule.bat
+
 and then double click
+
 push_submodule_and_main.bat
 
 # PowerShell (with options)
