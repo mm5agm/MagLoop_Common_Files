@@ -26,7 +26,17 @@ When changes are made to these common files, projects using them need to update 
 Method 1: Using Update Scripts (Recommended)
 Each project includes update scripts for easy maintenance:
 # Windows
-update-common.bat
+update_submodule.bat
+Then :
+cd MagLoop_Common_Files
+git add .
+git commit -m "Resolve merge conflicts and update shared files"
+git push origin main
+Then:
+cd ..
+git add MagLoop_Common_Files
+git commit -m "Update MagLoop_Common_Files submodule to latest version"
+git push origin master
 
 # PowerShell (with options)
 .\update-submodules.ps1 -Quiet
