@@ -23,7 +23,10 @@ typedef enum {
     CMD_DOWN_LIMIT_OK,
     CMD_DOWN_LIMIT_TRIP,
     CMD_HEARTBEAT,
-    CMD_ACK
+    CMD_ACK,
+    CMD_SLOW_SPEED_FACTOR,
+    CMD_MEDIUM_SPEED_FACTOR,
+    CMD_FAST_SPEED_FACTOR
 } CommandType;
 
 // Message structure for ESP-NOW communication
