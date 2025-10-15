@@ -21,7 +21,7 @@ build_flags = -IMagLoop_Common_Files
 
 # For Arduino IDE: copy files to your project or add to include path
 Updating Shared Files
-When changes are made to these common files, projects using them need to update their submodules.
+# When changes are made to these common files, projects using them need to update their submodules.
 
 Method 1: Using Update Scripts (Recommended)
 Each project includes update scripts for easy maintenance:
