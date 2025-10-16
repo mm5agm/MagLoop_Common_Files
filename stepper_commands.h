@@ -1,4 +1,6 @@
+
 #pragma once
+#include <stdint.h>
 
 #define STEPPER_PARAM_UNUSED 0
 // editted in MagLoop_Common_Files/stepper_commands.h
