@@ -32,10 +32,12 @@ Batch Scripts for Updating and Uploading Code
 Use the following batch files in your main project folder to keep MagLoop_Common_Files and StepperGUI in sync:
 
 download_latest_code.bat – Pulls the latest code from both StepperGUI and MagLoop_Common_Files from GitHub.
-upload_code_if_changed.bat – Checks for changes (including README.md and all other files) in both repositories and pushes updates only if changes are detected.
+upload_code_if_changed.bat – Checks for changes (including README.md and all other files) in both repositories  
+and pushes updates only if changes are detected.
 Usage
 Double-click or run download_latest_code.bat to update your local code from GitHub.
-Double-click or run upload_code_if_changed.bat to push any local changes (including README.md) to GitHub. If there are no changes, the script will warn and do nothing.
+Double-click or run upload_code_if_changed.bat to push any local changes (including README.md) to GitHub.   
+If there are no changes, the script will warn and do nothing.
 These scripts automate the most common sync operations for development and ensure documentation changes are included.
 
 🛠 Development Workflow
