@@ -26,7 +26,8 @@ typedef enum {
     CMD_ACK,
     CMD_SLOW_SPEED_PULSE_DELAY,
     CMD_MEDIUM_SPEED_PULSE_DELAY,
-    CMD_FAST_SPEED_PULSE_DELAY
+    CMD_FAST_SPEED_PULSE_DELAY,
+    CMD_MOVE_TO_PULSE_DELAY
 } CommandType;
 
 // Message structure for ESP-NOW communication

@@ -74,8 +74,6 @@ Best Practices
 ✅ Update all dependent projects after making changes
 ✅ Maintain backward compatibility when possible
 ✅ Document breaking changes in commit messages
-📋 File Descriptions
-stepper_commands.h
 CommandType enum - All ESP-NOW command definitions
 Message struct - Packed message format for wire communication
 Constants - Position limits and parameter defaults
