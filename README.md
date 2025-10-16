@@ -23,23 +23,22 @@ build_flags = -IMagLoop_Common_Files
 Updating Shared Files
 # When changes are made to these common files, projects using them need to update their submodules.
 
-Method 1: Using Update Scripts (Recommended)
-Each project includes update scripts for easy maintenance:
-# Windows
-Use Explorer to go to the project folder
-In the project folder double click 
-
-update_submodule.bat
-
 and then double click
-
 push_submodule_and_main.bat
 
-# PowerShell (with options)
-.\update-submodules.ps1 -Quiet
+## Batch Scripts for Updating and Uploading Code
 
-# Cross-platform
-./update-common.sh
+The recommended way to keep MagLoop_Common_Files and StepperGUI in sync is to use the provided batch files in the main project folder:
+
+- **download_latest_code.bat**: Pulls the latest code from both StepperGUI and MagLoop_Common_Files from GitHub.
+- **upload_code_if_changed.bat**: Checks for changes (including README.md and all other files) in both repositories and pushes updates only if changes are detected.
+
+### Usage
+
+1. Double-click or run `download_latest_code.bat` to update your local code from GitHub.
+2. Double-click or run `upload_code_if_changed.bat` to push any local changes (including README.md) to GitHub. If there are no changes, the script will warn and do nothing.
+
+These scripts automate the most common sync operations for development and ensure documentation changes are included.
 
 Method 2: Using Git Aliases
 # Update submodule only
