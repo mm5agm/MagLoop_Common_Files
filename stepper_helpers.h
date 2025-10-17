@@ -27,6 +27,10 @@ const char* commandToString(CommandType cmd) {
         case CMD_DOWN_LIMIT_TRIP: return "DOWN_LIMIT_TRIP";
         case CMD_HEARTBEAT: return "HEARTBEAT";
         case CMD_ACK: return "ACK";
+        case CMD_SLOW_SPEED_PULSE_DELAY: return "SLOW_SPEED_PULSE_DELAY";
+        case CMD_MEDIUM_SPEED_PULSE_DELAY: return "MEDIUM_SPEED_PULSE_DELAY";
+        case CMD_FAST_SPEED_PULSE_DELAY: return "FAST_SPEED_PULSE_DELAY";
+        case CMD_MOVE_TO_PULSE_DELAY: return "MOVE_TO_PULSE_DELAY";
         default: return "UNKNOWN";
     }
 }
