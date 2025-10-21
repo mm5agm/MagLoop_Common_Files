@@ -15,22 +15,23 @@ const char* commandToString(CommandType cmd) {
         case CMD_DOWN_MEDIUM: return "DOWN_MEDIUM";
         case CMD_DOWN_FAST: return "DOWN_FAST";
         case CMD_MOVE_TO: return "MOVE_TO";
-        case CMD_MOVE_TO_DOWN_LIMIT: return "MOVE_TO_DOWN_LIMIT";
-        case CMD_DOWN_LIMIT_STATUS: return "DOWN_LIMIT_STATUS";
-        case CMD_REQUEST_DOWN_STOP: return "REQUEST_DOWN_STOP";
         case CMD_GET_POSITION: return "GET_POSITION";
         case CMD_RESET: return "RESET";
         case CMD_POSITION: return "POSITION";
-        case CMD_UP_LIMIT_OK: return "UP_LIMIT_OK";
-        case CMD_UP_LIMIT_TRIP: return "UP_LIMIT_TRIP";
-        case CMD_DOWN_LIMIT_OK: return "DOWN_LIMIT_OK";
-        case CMD_DOWN_LIMIT_TRIP: return "DOWN_LIMIT_TRIP";
         case CMD_HEARTBEAT: return "HEARTBEAT";
         case CMD_ACK: return "ACK";
         case CMD_SLOW_SPEED_PULSE_DELAY: return "SLOW_SPEED_PULSE_DELAY";
         case CMD_MEDIUM_SPEED_PULSE_DELAY: return "MEDIUM_SPEED_PULSE_DELAY";
         case CMD_FAST_SPEED_PULSE_DELAY: return "FAST_SPEED_PULSE_DELAY";
         case CMD_MOVE_TO_PULSE_DELAY: return "MOVE_TO_PULSE_DELAY";
+        case CMD_HOME: return "HOME";
+        case CMD_HOME_COMPLETE: return "HOME_COMPLETE";
+        case CMD_HOME_FAILED: return "HOME_FAILED";
+        case CMD_SENSOR_STATUS: return "SENSOR_STATUS";
+        case CMD_SET_HOME_POSITION: return "SET_HOME_POSITION";
+        case CMD_MOVE_TO_HOME: return "MOVE_TO_HOME";
+        case CMD_SENSOR_ERROR: return "SENSOR_ERROR";
         default: return "UNKNOWN";
     }
+        // Removed: limit switch command string cases
 }

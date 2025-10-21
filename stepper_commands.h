@@ -14,22 +14,24 @@ typedef enum {
     CMD_DOWN_MEDIUM,
     CMD_DOWN_FAST,
     CMD_MOVE_TO,
-    CMD_MOVE_TO_DOWN_LIMIT,
-    CMD_DOWN_LIMIT_STATUS,
-    CMD_REQUEST_DOWN_STOP,
+    // Removed: limit switch commands
+    // Removed: limit switch commands
     CMD_GET_POSITION,
-    CMD_RESET,
     CMD_POSITION,
-    CMD_UP_LIMIT_OK,
-    CMD_UP_LIMIT_TRIP,
-    CMD_DOWN_LIMIT_OK,
-    CMD_DOWN_LIMIT_TRIP,
+    CMD_RESET,
     CMD_HEARTBEAT,
     CMD_ACK,
     CMD_SLOW_SPEED_PULSE_DELAY,
     CMD_MEDIUM_SPEED_PULSE_DELAY,
     CMD_FAST_SPEED_PULSE_DELAY,
-    CMD_MOVE_TO_PULSE_DELAY
+    CMD_MOVE_TO_PULSE_DELAY,
+    CMD_HOME,
+    CMD_HOME_COMPLETE,
+    CMD_HOME_FAILED,
+    CMD_SENSOR_STATUS,
+    CMD_SET_HOME_POSITION,
+    CMD_MOVE_TO_HOME,
+    CMD_SENSOR_ERROR
 } CommandType;
 
 // Message structure for ESP-NOW communication
